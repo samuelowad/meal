@@ -7,4 +7,5 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+how-to-use.txt
 web-report/
