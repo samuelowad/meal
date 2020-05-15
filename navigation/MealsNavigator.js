@@ -112,7 +112,7 @@ const MainNavigator = createDrawerNavigator(
     contentOptions: {
       activeTintColor: Colors.accentColor,
       labelStyle: {
-        fontFamily: "open-sans"
+        fontFamily: "open-sans-bold"
       }
     }
   }
