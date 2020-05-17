@@ -1,12 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import MealList from "../components/MealList";
-import { CATEGORIES, MEALS } from "../data/dummy-data";
+import { CATEGORIES } from "../data/dummy-data";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import HeaderButton from "../components/HeaderButton";
+import { useSelector } from "react-redux";
 
 const FavoritesScreen = props => {
-  const favMeals = MEALS.filter(meal => meal.id === "m1" || meal.id === "m2");
+  const favMeals = useSelector(state => state.meal.favMeals);
+  // console.log(favMeals);
   return <MealList listData={favMeals} navigation={props.navigation} />;
 };
 

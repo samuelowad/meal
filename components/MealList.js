@@ -8,7 +8,8 @@ const MealList = props => {
         return (<MealItems title={itemData.item.title} duration={itemData.item.duration} image={itemData.item.imageUrl} complexity={itemData.item.complexity} affordability={itemData.item.affordability} onSelectMeal={() => {
             props.navigation.navigate({
                 routeName: 'MealDetail', params: {
-                    mealId: itemData.item.id
+                    mealId: itemData.item.id,
+                    mealTitle:itemData.item.title
                 }
             })
         }} />)
